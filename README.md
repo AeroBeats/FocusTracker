@@ -44,7 +44,6 @@
 ```
 app/src/main/java/com/focustracker/
 ├── data/        # Room：Category、FocusSession、DAO、Database
-├── data/        # Room：Category、FocusSession、DAO、Database
 ├── detector/    # 人脸低头检测、应用分类、专注引擎（状态机）
 ├── service/     # FocusForegroundService：计时与检测编排
 ├── alert/       # DistractionAlerter：振动 + 全屏通知
@@ -80,7 +79,7 @@ adb install -r app/build/outputs/apk/debug/app-debug.apk
 | `FOREGROUND_SERVICE` / `FOREGROUND_SERVICE_CAMERA` | 后台持续计时与检测 | 安装时授予 |
 | `USE_FULL_SCREEN_INTENT` | 分心时弹出全屏提醒 | 安装时授予 |
 | `VIBRATE` | 分心振动提醒 | 安装时授予 |
-| `PACKAGE_USAGE_STATS` | 读取前台应用以读取前台应用以判断专注度 | **需手动**到「设置 → 特殊应用权限 → 使用情况访问」开启 |
+| `PACKAGE_USAGE_STATS` | 读取前台应用以判断专注度 | **需手动**到「设置 → 特殊应用权限 → 使用情况访问」开启 |
 
 未授予「使用情况访问」时，设备工作模式会退化为中性判定，仅监护模式有效。
 
@@ -99,7 +98,6 @@ adb install -r app/build/outputs/apk/debug/app-debug.apk
 - [ ] 进程被杀后的会话恢复
 - [ ] 每日/每周统计与趋势图
 - [ ] 数据导出（CSV / JSON）
-- [ ] 项目结构里 data/ 有三行
 - [ ] 「熄屏专注」模式
 
 ## License
