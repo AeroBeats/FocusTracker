@@ -24,7 +24,7 @@
 | 姿态识别 | ML Kit Face Detection 16.1.7（端侧离线） |
 | 存储 | Room 2.7.2 |
 | 后台运行 | Foreground Service（`camera` 类型） |
-| 构建 | Gradle 9.6.0 / AGP 9.5.2 / Kotlin 2.2.10（KGP，关闭 AGP 内置 Kotlin）/ KSP 2.2.10-2.0.2 |
+| 构建 | Gradle 9.6.0 / AGP 9.5.2 / Kotlin 2.2.10（AGP 内置 Kotlin）/ KSP 2.2.10-2.0.2 |
 
 `minSdk 26`，`compileSdk / targetSdk 36`。
 
