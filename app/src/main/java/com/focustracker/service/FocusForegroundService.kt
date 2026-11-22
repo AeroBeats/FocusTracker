@@ -188,7 +188,7 @@ class FocusForegroundService : LifecycleService() {
         if (::engine.isInitialized) engine.stop()
     }
 
-    override fun onBind(intent: Intent?): IBinder? = super.onBind(intent)
+    override fun onBind(intent: Intent): IBinder? = super.onBind(intent)
 
     private fun startForegroundCompat() {
         val notification = buildNotification()
